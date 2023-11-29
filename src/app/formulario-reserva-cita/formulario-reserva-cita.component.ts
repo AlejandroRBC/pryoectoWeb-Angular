@@ -10,4 +10,14 @@ export class FormularioReservaCitaComponent {
   Meses = ["Enero", "Febrero","Marzo","Abril","Mayo", "Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"]
   Anios = [2023,2024]
   Areas=["Psicologia","Medicina","Fisioterapia","Fonoaudiologia","Nutricion","Psicomotricidad"]
+
+  validar(nom:String,paterno:String,materno:String,ed:number,dia:number,me:String,anio:String,are:String){
+    console.log("hoal");
+  }
+  borrar(){
+    console.log("borra");
+    
+  }
 }
+
+
