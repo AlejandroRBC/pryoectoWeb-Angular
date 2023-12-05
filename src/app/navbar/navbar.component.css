@@ -1,0 +1,48 @@
+body {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    background-color: #119DA4;
+    display: flex;
+    top: 0px;
+    position: sticky;
+    width: 100%;
+    height: 70%;
+    align-items: center;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 21px;
+}
+
+.navbar a:hover {
+    background-color: #0C7489;
+}
+
+.navbar img {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+}
+.navbar .logo {
+    width: 20%;
+    padding-left: 40px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.medio {
+    width: 30%;
+}
+.enlaces {
+    text-indent: 10px;
+}
+.enlaces a {
+    padding-left: 20px;
+    padding-right: 20px;
+
+}

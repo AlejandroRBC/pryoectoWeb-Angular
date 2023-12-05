@@ -3,14 +3,26 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { FormularioReservaCitaComponent } from './formulario-reserva-cita/formulario-reserva-cita.component';
+import { FormsModule } from '@angular/forms';
+import { NavbarComponent } from './navbar/navbar.component';
+import { FooterComponent } from './footer/footer.component';
+import { CarruselComponent } from './carrusel/carrusel.component';
+import { DirectorioComponent } from './directorio/directorio.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    FormularioReservaCitaComponent
+    FormularioReservaCitaComponent,
+    NavbarComponent,
+    FooterComponent,
+    CarruselComponent,
+    DirectorioComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
