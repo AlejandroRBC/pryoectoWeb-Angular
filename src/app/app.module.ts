@@ -20,6 +20,10 @@ const rutas:Routes= [
   {
     path:'directorio',
     component:DirectorioComponent
+  },
+  {
+    path:'pagfisio',
+    component:PaginaFisioterapiaComponent
   }
 ];
 

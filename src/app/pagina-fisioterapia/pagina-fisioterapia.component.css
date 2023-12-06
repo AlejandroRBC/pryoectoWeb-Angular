@@ -1,0 +1,42 @@
+body{
+    background-color: blanchedalmond;
+    font-family: 'Poppins', sans-serif;
+}
+/**/
+.titulo{
+    text-align: center;
+}
+/**/
+.cajaServ{
+    text-align: center;
+}
+/**/
+.infoPrincipal{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.cajita{
+    margin: 20px;
+    padding: 2%;
+    background-color: aqua;
+    text-align: justify;
+}
+/**/
+.servicios{
+    display: block;
+}
+.cajaServ{
+    display: flex;
+    background-color: rebeccapurple;
+    margin: 40px;
+    padding: 3%;
+    justify-content: space-evenly;
+}
+/**/
+.horarios{
+    background-color: brown;
+    text-align: center;
+    padding: 1%;
+    
+}
