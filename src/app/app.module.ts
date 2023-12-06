@@ -9,6 +9,19 @@ import { FooterComponent } from './footer/footer.component';
 import { CarruselComponent } from './carrusel/carrusel.component';
 import { DirectorioComponent } from './directorio/directorio.component';
 
+import {Routes, RouterModule } from '@angular/router';
+import { PaginaFisioterapiaComponent } from './pagina-fisioterapia/pagina-fisioterapia.component';  
+
+const rutas:Routes= [
+  {
+    path:'formulario',
+    component:FormularioReservaCitaComponent
+  },
+  {
+    path:'directorio',
+    component:DirectorioComponent
+  }
+];
 
 @NgModule({
   declarations: [
@@ -17,12 +30,13 @@ import { DirectorioComponent } from './directorio/directorio.component';
     NavbarComponent,
     FooterComponent,
     CarruselComponent,
-    DirectorioComponent
+    DirectorioComponent,
+    PaginaFisioterapiaComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    
+    RouterModule.forRoot(rutas)
   ],
   providers: [],
   bootstrap: [AppComponent]

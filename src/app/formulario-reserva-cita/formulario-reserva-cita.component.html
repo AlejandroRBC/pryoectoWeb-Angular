@@ -31,8 +31,8 @@
                         <option *ngFor="let aniox of Anios">{{aniox}}</option>
                     </select><br>
 
-                    <select  class="cajaSelect area" #area #sel (change)="sel.value">
-                        <option value='-1'>Seleccione un Area</option>
+                    <select class="cajaSelect area" #area #sel (change)="sel.value">
+                        <option value=-1>Seleccione un Area</option>
                         <option value=0>medicina</option>
                         <option value=1>nutricion</option>
                         <option value=2>fisioterapia</option>
@@ -41,15 +41,15 @@
                         <option value=5>Psicomotricidad</option>
                     </select>
                     <br>
-                    <div class="cajaAdvertencia" *ngIf="swArea">Selecciona  un Area</div>
+                    <div class="cajaAdvertencia" *ngIf="swArea">Selecciona un Area</div>
+                    <div class="botones">
+                        <button
+                            (click)="enviar(nombre.value,paterno.value,materno.value,edade.value,dia.value, mes.value, anio.value ,area.value)">Enviar</button>
+                        <button
+                            (click)="nombre.value='';paterno.value='';materno.value='';edade.value='';area.value=''">Borrar</button>
+                    </div>
                 </div>
             </form>
-            <div class="botones">
-                <button
-                    (click)="enviar(nombre.value,paterno.value,materno.value,edade.value,dia.value, mes.value, anio.value ,area.value)">Enviar</button>
-                <button
-                    (click)="nombre.value='';paterno.value='';materno.value='';edade.value='';area.value=''">Borrar</button>
-            </div>
         </div>
     </div>
     <div class="caja">

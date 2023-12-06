@@ -30,7 +30,7 @@ export class FormularioReservaCitaComponent {
     else this.swNombre=false;
     if (pat=='') this.swPaterno=true;
     else this.swPaterno=false;
-    if (edad<=0 || ed=='') this.swEdad=true;
+    if (edad<=0 || edad>99 || ed=='') this.swEdad=true;
     else this.swEdad=false;
     if (dia=='') this.swDia=true;
     else this.swDia=false;
@@ -46,6 +46,8 @@ export class FormularioReservaCitaComponent {
   //TARJETA PRESENTACION
   constructor(public servDoctores:DatosDoctoresService){}
   volverEntero(valor:string){
+    if(parseInt(valor)==-1)
+      return 1;
     return parseInt(valor);
   }
   
